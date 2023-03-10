@@ -131,6 +131,12 @@ module.exports = function(env, arg) {
                     use: ['source-map-loader'],
                 }
             ]
+        },
+        resolve: {
+            alias: {
+                "react": "preact/compat",
+                "react-dom": "preact/compat"
+            }
         }
     };
 };
